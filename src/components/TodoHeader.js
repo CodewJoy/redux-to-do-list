@@ -3,10 +3,6 @@ import store from '../store';
 import { changeTodoText, addTodo } from "../actions";
 
 class TodoHeader extends Component {
-    // eslint-disable-next-line
-    constructor(props) {
-        super(props);
-    }
     handleChange = (event) => {
         let todoText = event.target.value;
         store.dispatch(changeTodoText(todoText))
@@ -29,16 +25,16 @@ class TodoHeader extends Component {
         const { todoText } = this.props;
         return (
             <>
-            <h1> todolist </h1>
-            <form onSubmit={this.handleSubmit}>
-                <input
-                    type="text"
-                    value={todoText}
-                    onChange={this.handleChange}
-                    placeholder="Key in your tasks..."
-                />
-            </form>
-            <hr />
+                <h1> todolist </h1>
+                <form onSubmit={this.handleSubmit}>
+                    <input
+                        type="text"
+                        value={todoText}
+                        onChange={this.handleChange}
+                        placeholder="Key in your tasks..."
+                    />
+                </form>
+                <hr />
             </>
         )
     }

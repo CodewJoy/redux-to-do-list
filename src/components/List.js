@@ -1,4 +1,3 @@
-/* eslint-disable no-useless-constructor */
 import React, { Component } from "react";
 import styled from 'styled-components';
 import store from '../store';
@@ -10,18 +9,14 @@ const Label = styled.label`
     padding: 10px 0;
     align-items: center;
     justify-content: space-between;
-    width: 300px;
+    width: 500px;
 `;
 const Div = styled.div`
-    max-width: 200px;
+    max-width: 450px;
 `;
 
 
 class List extends Component {
-    constructor(props) {
-        super(props);
-        
-    }
     handleClick = (event) => {
         // this.props.completeStatus(event.target.id)
         let id = event.target.id;
