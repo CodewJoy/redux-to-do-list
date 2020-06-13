@@ -4,24 +4,14 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import { Provider } from 'react-redux'
-import store from './store'
-import { setViewFilter, ViewFilters } from './actions'
-const { SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE } = ViewFilters
-
-console.log(store)
-store.dispatch(setViewFilter(SHOW_COMPLETED))
-console.log(store.getState())
-store.dispatch(setViewFilter(SHOW_ACTIVE))
-console.log(store.getState())
-store.dispatch(setViewFilter(SHOW_ALL))
-console.log(store.getState())
+// import { Provider } from 'react-redux'
+// import store from './store'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
+    {/* <Provider store={store}> */}
       <App />
-    </Provider>
+    {/* </Provider> */}
   </React.StrictMode>
   , document.getElementById('root')
 );

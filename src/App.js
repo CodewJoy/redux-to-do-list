@@ -4,6 +4,7 @@ import List from "./components/List.js";
 import TaskFilter from "./components/TaskFilter.js";
 import store from './store';
 
+
 class App extends Component {
     constructor(props) {
         super(props);

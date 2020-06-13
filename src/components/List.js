@@ -15,16 +15,13 @@ const Div = styled.div`
     max-width: 450px;
 `;
 
-
 class List extends Component {
     handleClick = (event) => {
-        // this.props.completeStatus(event.target.id)
         let id = event.target.id;
         store.dispatch(toggleTodo(id))
 
     }
     clicktoClose = (event) => {
-        // this.props.closeTodo(event.target.id);
         let id = event.target.id;
         store.dispatch(deleteTodo(id))
     }

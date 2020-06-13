@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { combineReducers } from 'redux'
 import { CHANGE_TODO_TEXT, ADD_TODO, TOGGLE_TODO, DELETE_TODO, SET_VIEW_FILTER, ViewFilters } from '../actions'
 const { SHOW_ALL } = ViewFilters
